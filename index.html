@@ -5,10 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <script
+      src="https://kit.fontawesome.com/4a314d7cd5.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FABE4C",
+
+              secondary: "#363958",
+              button: {
+                from: "#A4BC46",
+                to: "#A4BC46",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
-    <h1 class="text-7xl text-blue-500">Penguin Fashion</h1>
-    <div class="container bg-slate-500 mx-0">Ami Em0n</div>
+    <div class="container flex items-center gap-6 px-4 py-2">
+      <div>
+        <img src="./icons/Group 33072.png" alt="" />
+      </div>
+      <div><i class="fa-solid text-2xl fa-bars"></i></div>
+    </div>
+    <!-- Header Section Start -->
+    <div class="container p-5">
+      <div>
+        <p class="text-6xl font-semibold tracking-tight">
+          <span class="text-primary"> Be the Penguins </span><br /><span
+            class="text-secondary"
+            >of Winter</span
+          >
+        </p>
+        <p class="font-sans tracking-wider">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <button
+          class="bg-gradient-to-tr from-button-from to-button-to px-6 py-3 rounded-md text-white flex items-center gap-2 my-5"
+        >
+          <i class="fa-solid fa-cart-plus"></i>
+          <p>Buy Now</p>
+        </button>
+      </div>
+      <div class="p-5">
+        <img class="w-full" src="./images/model.png" alt="" />
+      </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Women Jacket Section Start -->
   </body>
 </html>
