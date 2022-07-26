@@ -40,14 +40,22 @@
   </head>
   <body class="bg-body">
     <!-- Header Section Start -->
-    <div class="container mx-auto bg-white flex items-center gap-6 px-4 py-2">
+    <div
+      class="bg-white flex items-center gap-6 px-16 py-5 shadow-lg md:fixed w-full md:justify-between"
+    >
       <div>
-        <img src="./icons/Group 33072.png" alt="" />
+        <img class="md:w-60" src="./icons/Group 33072.png" alt="" />
       </div>
-      <div><i class="fa-solid text-2xl fa-bars"></i></div>
+      <ul class="hidden md:flex gap-5 font-semibold text-secondary">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About Us</li>
+        <li>Contact</li>
+      </ul>
+      <div class="md:hidden"><i class="fa-solid text-2xl fa-bars"></i></div>
     </div>
 
-    <div class="container mx-auto bg-white p-5">
+    <div class="bg-white p-5 md:flex items-center justify-center md:pt-16">
       <div>
         <p class="text-6xl font-semibold tracking-tight">
           <span class="text-primary"> Be the Penguins </span><br /><span
@@ -71,10 +79,10 @@
     <!-- Header Section End -->
 
     <!-- Women Jacket Section Start -->
-    <div class="container mx-auto">
-      <h1 class="text-center text-secondary text-4xl font-semibold my-5">
-        Women Jacket
-      </h1>
+    <h1 class="text-center text-secondary text-4xl font-semibold my-5">
+      Women Jacket
+    </h1>
+    <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
       <!-- Card -->
       <div class="px-7 pt-10 m-6 shadow-md bg-white rounded-lg">
         <div class="p-8 bg-cardimage rounded-lg">
@@ -119,10 +127,10 @@
     </div>
     <!-- Women Jacket Section End -->
     <!-- Men Jacket Section Start -->
-    <div class="container mx-auto">
-      <h1 class="text-center text-secondary text-4xl font-semibold my-5">
-        Men Jacket
-      </h1>
+    <h1 class="text-center text-secondary text-4xl font-semibold my-5">
+      Men Jacket
+    </h1>
+    <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3">
       <!-- Card -->
       <div class="px-7 pt-10 m-6 shadow-md bg-white rounded-lg">
         <div class="p-8 bg-cardimage rounded-lg">
@@ -167,43 +175,61 @@
     </div>
     <!-- Men Jacket Section End -->
     <!-- About Us Section Start -->
-    <div class="container mx-auto">
-      <div class="p-10">
+    <div class="container mx-auto md:flex md:flex-row-reverse md:items-center">
+      <div class="p-10 md:basis-4/5">
         <img class="w-full h-auto" src="./images/shopping.png" alt="" />
       </div>
       <div>
         <div
-          class="flex flex-col items-center p-12 bg-white shadow-lg rounded-md m-5 text-center"
+          class="flex flex-col items-center p-12 md:p-4 md:gap-2 bg-white shadow-lg rounded-md m-5 text-center md:flex-row"
         >
-          <img class="w-20" src="./images/house.png" alt="" />
-          <h1 class="text-4xl font-semibold text-secondary">
-            Find the Perfect Fit
-          </h1>
-          <p>
-            Everybody is different, which is why we offer styles for every body.
-          </p>
+          <img class="w-20 md:w-16" src="./images/house.png" alt="" />
+
+          <div class="md:flex flex-col">
+            <h1 class="text-4xl md:text-2xl font-semibold text-secondary">
+              Find the Perfect Fit
+            </h1>
+            <p>
+              Everybody is different, which is why we offer styles for every
+              body.
+            </p>
+          </div>
         </div>
         <div
-          class="flex flex-col items-center p-12 bg-white shadow-lg rounded-md m-5 text-center"
+          class="flex flex-col items-center p-12 md:p-4 md:gap-2 bg-white shadow-lg rounded-md m-5 text-center md:flex-row"
         >
-          <img class="w-20" src="./images/box.png" alt="" />
-          <h1 class="text-4xl font-semibold text-secondary">Free Exchanges</h1>
-          <p>One of the many reasons you can shop with peace of mind.</p>
+          <img class="w-20 md:w-16" src="./images/box.png" alt="" />
+          <div class="md:flex flex-col">
+            <h1 class="text-4xl md:text-2xl font-semibold text-secondary">
+              Free Exchanges
+            </h1>
+            <p>One of the many reasons you can shop with peace of mind.</p>
+          </div>
         </div>
         <div
-          class="flex flex-col items-center p-12 bg-white shadow-lg rounded-md m-5 text-center"
+          class="flex flex-col items-center p-12 md:p-4 md:gap-2 bg-white shadow-lg rounded-md m-5 text-center md:flex-row"
         >
-          <img class="w-20" src="./images/question.png" alt="" />
-          <h1 class="text-4xl font-semibold text-secondary">
-            Contact Our Seller
-          </h1>
-          <p>
-            They are here to help you. That's quite literally what we pay them
-            for.
-          </p>
+          <img class="w-20 md:w-16" src="./images/question.png" alt="" />
+          <div class="md:flex flex-col">
+            <h1 class="text-4xl md:text-2xl font-semibold text-secondary">
+              Contact Our Seller
+            </h1>
+            <p>
+              They are here to help you. That's quite literally what we pay them
+              for.
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!-- About Us Section End -->
+    <footer>
+      <p class="text-center text-secondary py-8 text-lg tracking-widest">
+        All rights reserved by
+        <strong class="font-serif text-primary"
+          ><a href="http://sohanemon.github.io">SohanEmon 🚀</a></strong
+        >
+      </p>
+    </footer>
   </body>
 </html>
